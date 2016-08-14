@@ -6,25 +6,12 @@
         <div>
             <h1><a href="">Rudix Jrinkx's blog</a></h1>
         </div>
-        
-        <div>
-            <p>published: 15.08.2016, 03:47 AM</p>
-            <h3><a href="">Warren Buffet</a></h3>
-            <p>Penghasilan yaitu Jangan pernah bergantung pada satu penghasilan. Buatlah investasi untuk menciptakan sumber kedua.
-Pengeluaran yaitu Jika Anda membeli barang yang tidak Anda butuhkan, lekas Anda akan menjual barang yang Anda butuhkan.
-Tabungan yaitu Jangan menabung apa yang tersisa setelah dihabiskan, Akan tetapi habiskanlah apa yang tersisa setelah ditabungkan.
-Resiko yaitu Jangan pernah menguji kedalaman dari sungai dengan kedua kaki.
-Investasi yaitu Jangan menaruh seluruh telur dalam satu keranjang.
-Harapan yaitu Kejujuran merupakan hadiah yang sangat mahal, jangan pernah
-mengharapkannya dari orang yang pelit.</p>
-        </div>
-
-        <div>
-            <p>published: 15.08.2016, 03:47 AM</p>
-            <h3><a href="">Hikigaya Hachiman</a></h3>
-            <p>Aku pikir aku sedang memikirkan perasaan orang lain, tapi aku hanya melihat permukaannya saja.
-Aku bertindak dengan asumsi dari sebuah kebenaran yang hanya kutebak-tebak.
-Bagaimana itu bisa ada bedanya dari kepuasan diri sendiri?</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h3><a href="">{{ post.title }}</a></h3>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}        
     </body>
 </html>
