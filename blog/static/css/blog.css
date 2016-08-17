@@ -1,0 +1,51 @@
+body {
+	background-color: #cccccc;
+}
+
+.page-header {
+	background-color: #1793d1;
+	margin: -8px -8px 0px -8px;
+	padding: 20px 20px 20px 48px;
+	height: 100%;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+	color: #cccccc;
+	font-size: 36pt;
+	text-decoration: none;
+}
+
+.content {
+	background-color: #cccccc;
+	margin: 0px 80px 0px 0px;
+	padding: 20px 0px 0px 40px;
+	height: 100%;
+}
+
+.date {
+	color: #828282;
+}
+
+.save {
+	float: right;
+}
+
+.post-form textarea, .post-form input {
+	width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+	color: #ffffff;
+	float: right;
+	font-size: 26pt;
+	margin-right: 20px;
+}
+
+.post {
+	margin-bottom: 60px;
+}
+
+.post h1 a, .post h1 a:visited {
+	color:	#1793d1;
+	text-decoration: none;
+}
