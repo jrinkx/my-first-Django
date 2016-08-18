@@ -5,19 +5,21 @@ body {
 .page-header {
 	background-color: #1991d1;
 	margin: 0px 0px 0px 0px;
-	padding: 20px 20px 20px 48px;
+	padding: 10px 10px 10px 40px;
 	width: 100%;
 	border: none;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-	color: #eeeeee;
+	color: #cccccc;
 	font-size: 36pt;
+	font-family: verdana;
 	text-decoration: none;
 }
 
 .page-header h1 a:hover {
-	color: #ffffff;
+	color: #dddddd;
+	text-decoration: none;
 }
 
 .content {
