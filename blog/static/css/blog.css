@@ -1,25 +1,31 @@
 body {
-	background-color: #cccccc;
+	background-color: #eeeeee;
 }
 
 .page-header {
-	background-color: #1793d1;
-	margin: -8px -8px 0px -8px;
+	background-color: #1991d1;
+	margin: 0px 0px 0px 0px;
 	padding: 20px 20px 20px 48px;
-	height: 100%;
+	width: 100%;
+	border: none;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-	color: #cccccc;
+	color: #eeeeee;
 	font-size: 36pt;
 	text-decoration: none;
 }
 
+.page-header h1 a:hover {
+	color: #ffffff;
+}
+
 .content {
-	background-color: #cccccc;
-	margin: 0px 80px 0px 0px;
+	background-color: #eeeeee;
+	margin: 10px 0px 0px 0px;
 	padding: 20px 0px 0px 40px;
 	height: 100%;
+	width: 100%;
 }
 
 .date {
@@ -45,7 +51,17 @@ body {
 	margin-bottom: 60px;
 }
 
-.post h1 a, .post h1 a:visited {
-	color:	#1793d1;
+.post h1, .post h1 a {
+	color:	#1991d1;
+	text-decoration: none;
+}
+
+.post h1 a:visited {
+	color: #006595;
+	text-decoration: none;
+}
+
+.post h1 a:hover {
+	color: grey;
 	text-decoration: none;
 }
