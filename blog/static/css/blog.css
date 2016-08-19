@@ -2,68 +2,61 @@ body {
 	background-color: #eeeeee;
 }
 
-.page-header {
+/* page-header class */
+.page-header	{
 	background-color: #1991d1;
-	margin: 0px 0px 0px 0px;
-	padding: 10px 10px 10px 40px;
-	width: 100%;
+	margin: 0px;
+	padding: 20px 20px 0px 40px;
 	border: none;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-	color: #cccccc;
+	color: #ffffff;
 	font-size: 36pt;
-	font-family: verdana;
 	text-decoration: none;
 }
 
-.page-header h1 a:hover {
+/* top-menu-right */
+.top-menu-right ul {
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 90%;
+}
+
+.top-menu-right ul li a {
+	display: inline-block;
+	float: right;
+	text-decoration: none;
 	color: #dddddd;
-	text-decoration: none;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
 }
 
+.top-menu-right ul li a:hover {
+	background-color: #55bbff;
+	color: #ffffff;
+}
+
+/* content class */
 .content {
-	background-color: #eeeeee;
-	margin: 10px 0px 0px 0px;
-	padding: 20px 0px 0px 40px;
-	height: 100%;
+	border: none;
 	width: 100%;
+	padding: 20px 20px 0px 40px
 }
 
 .date {
 	color: #828282;
 }
 
-.save {
-	float: right;
+.post	{
+	margin-bottom:	70px;
 }
 
-.post-form textarea, .post-form input {
-	width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-	color: #ffffff;
-	float: right;
-	font-size: 26pt;
-	margin-right: 20px;
-}
-
-.post {
-	margin-bottom: 60px;
-}
-
-.post h1, .post h1 a {
+.post h1, .post h1 a, .post h1 a:visited {
+	text-decoration: none;
 	color:	#1991d1;
-	text-decoration: none;
 }
 
-.post h1 a:visited {
-	color: #006595;
-	text-decoration: none;
-}
-
-.post h1 a:hover {
-	color: grey;
-	text-decoration: none;
+.post h1 a:hover{
+	color:	#444444;
 }

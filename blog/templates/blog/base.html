@@ -1,27 +1,36 @@
 {% load staticfiles %}
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <!-- load from bootsrap -->
-        <title>Rudix Jrinkx's Blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <!-- load from local -->
-        <link href="{% static 'img/favicon.ico' %}" rel="shortcut icon">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <a href="/"><img src="{% static 'img/icon.png' %}" style="width:84px;height:84px;" alt="Rudix Jrink's Blog"></a>
-        </div>
+  <head>
+    <!-- load from bootsrap -->
+    <title>Rudix Jrinkx's Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
-            </div>
+    <!-- load from local -->
+    <link href="{% static 'img/favicon.ico' %}" rel="shortcut icon">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <div class="page-header">
+      <a href="/"><img src="{% static 'img/icon.png' %}" style="width:84px;height:84px;" alt="Rudix Jrink's Blog"></a>
+      <h3 class="top-menu-right top-menu">
+        <ul><b>
+          <li><a href="/">About</a></li>
+          <li><a href="https://github.com/jrinkx">GitHub</a></li>
+          <li><a href="/">Home</a></li>
+        </b></ul>
+      </h3>
+    </div>
+
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+        {% block content %}
+        {% endblock %}
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
